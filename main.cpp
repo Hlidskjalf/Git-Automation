@@ -1,12 +1,15 @@
 #include <iostream>
+#include <fstream>
 #include "git.h"
 
 int main_menu();
 int maint_menu();
 int push_menu();
+int file_append();
 
 int main(int argc, char **argv)
 {
+    file_append();
     main_menu();
 
     return 0;
@@ -96,4 +99,12 @@ int push_menu()
     }
 
     return 0;
+}
+
+int file_append()
+{
+    std::ofstream outfile;
+
+    outfile.open("test.txt", std::ios_base::app);
+    outfile << "Data";
 }
