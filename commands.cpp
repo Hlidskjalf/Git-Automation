@@ -5,7 +5,7 @@
 
 void git_cmd_set_upstream()
 {
-
+    //TODO create a set upstream command
 }
 
 void git_cmd_init()
