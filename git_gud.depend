@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1502303053 source:/home/avroman/Projects/cpp/git_gud/main.cpp
+	<iostream>
+	"git.h"
+
+1502302208 /home/avroman/Projects/cpp/git_gud/git.h
+
+1502301823 source:/home/avroman/Projects/cpp/git_gud/commands.cpp
+	<iostream>
+	<cstdlib>
+	<string>
+	"git.h"
+
