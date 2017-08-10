@@ -28,7 +28,12 @@ void git_cmd_add()
 
 void git_cmd_commit()
 {
-    system("git commit -m \"Daily push\"");
+    std::string commit = "git commit -m ";
+    std::string custom;
+    std::cout << "Enter a commit message: ";
+    std::cin >> custom;
+    commit += custom;
+    system(commit.c_str());
 }
 
 void git_cmd_push()
