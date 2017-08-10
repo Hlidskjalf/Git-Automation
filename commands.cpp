@@ -28,12 +28,14 @@ void git_cmd_add()
 
 void git_cmd_commit()
 {
-    std::string commit = "git commit -m ";
+    /*
+    std::string commit = "git commit -m Assisted push";
     std::string custom;
     std::cout << "Enter a commit message: ";
     std::cin >> custom;
     commit += custom;
-    system(commit.c_str());
+    */
+    system("git commit -m \"Assisted push\"");
 }
 
 void git_cmd_push()
