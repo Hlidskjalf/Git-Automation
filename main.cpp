@@ -6,12 +6,13 @@ int main_menu();
 int maint_menu();
 int push_menu();
 int file_append();
+int auto_run();
 
 int main(int argc, char **argv)
 {
     file_append();
-    main_menu();
-
+    //main_menu();
+    auto_run();
     return 0;
 }
 
@@ -107,4 +108,13 @@ int file_append()
 
     outfile.open("test.txt", std::ios_base::app);
     outfile << "Data";
+}
+
+int auto_run()
+{
+    git_cmd_add();
+    git_cmd_commit();
+    git_cmd_push();
+
+    return 0;
 }
