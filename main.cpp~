@@ -110,8 +110,6 @@ int file_append()
     outfile.open("loader.cpp", std::ios_base::app);
     outfile << "#include <iostream>";
     outfile << "int main(int argc, char **argv) {}";
-    
-    return 0;
 }
 
 int auto_run()

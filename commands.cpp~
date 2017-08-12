@@ -3,7 +3,7 @@
 #include <string>
 #include "git.h"
 
-int git_cmd_init()
+void git_cmd_init()
 {
     std::string choice;
     std::cout << "Has your project been initialized? (y/n): \n";
@@ -14,17 +14,14 @@ int git_cmd_init()
     } else {
         std::cout << "Excellent.\n";
     }
-    return 0;
 }
 
-int git_cmd_add()
+void git_cmd_add()
 {
     system("git add .");
-
-    return 0;
 }
 
-int git_cmd_commit()
+void git_cmd_commit()
 {
     /*
     std::string commit = "git commit -m Assisted push";
@@ -34,13 +31,9 @@ int git_cmd_commit()
     commit += custom;
     */
     system("git commit -m \"Assisted push\"");
-
-    return 0;
 }
 
-int git_cmd_push()
+void git_cmd_push()
 {
     system("git push -u origin master");
-
-    return 0;
 }
