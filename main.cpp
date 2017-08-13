@@ -108,8 +108,7 @@ int file_append()
     std::ofstream outfile;
 
     outfile.open("loader.cpp", std::ios_base::app);
-    outfile << "#include <iostream>";
-    outfile << "int main(int argc, char **argv) {}";
+    outfile << "987*^#!<>/^/#$%*&!)!@@#$qAROIAavARGRG955%^%236()@5134162\n";
     
     return 0;
 }
